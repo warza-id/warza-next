@@ -71,12 +71,12 @@ export default function Contact() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="max-w-md">
-            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Ready to Elevate Your Cloud Strategy?</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Anda memiliki pertanyaan ?</h2>
             <p className="text-lg text-foreground/70 mb-6">
-              Fill out the form to schedule a free consultation with our cloud experts. We'll help you find the perfect solution for your business needs.
+              Hubungi kami kapanpun melalui semua kontak yang ada disini: Whatsapp, Telphone, Email, Instagram, dan Form Kontak Kami.
             </p>
             <p className="text-foreground/70">
-              Our team will get back to you within 24 hours to discuss your project and how ApexCloud can help you achieve your goals.
+              Konsultasi gratis, dan akan terhubung langsung dengan kami tanpa melalui bot.
             </p>
           </div>
           <div className="max-w-lg mx-auto w-full bg-card p-8 rounded-lg shadow-md">

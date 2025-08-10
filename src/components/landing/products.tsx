@@ -4,23 +4,23 @@ import { Server, Database, Box, Globe } from "lucide-react"
 const products = [
   {
     icon: <Server className="h-10 w-10 text-primary" />,
-    name: "Compute Engine",
-    description: "Scalable virtual machines to run any workload, from small applications to large-scale enterprise services."
+    name: "Software as a services",
+    description: "Kami memiliki produk aplikasi yang bisa langsung anda gunakan untuk bisnis anda."
   },
   {
     icon: <Database className="h-10 w-10 text-primary" />,
-    name: "Object Storage",
-    description: "Secure, durable, and highly available object storage for your photos, videos, and unstructured data."
+    name: "IT Konsultan",
+    description: "Konsultasi tekait IT untuk kebutuhan bisnis anda, gratis."
   },
   {
     icon: <Box className="h-10 w-10 text-primary" />,
-    name: "Managed Kubernetes",
-    description: "Deploy, manage, and scale containerized applications using our fully managed Kubernetes service."
+    name: "IT Course",
+    description: "Les Privat belajar menjadi programer, tester dan scrum master."
   },
   {
     icon: <Globe className="h-10 w-10 text-primary" />,
-    name: "Global CDN",
-    description: "Accelerate your content delivery worldwide with our low-latency, high-performance content delivery network."
+    name: "Web Development",
+    description: "Jasa Pembuatan Website untuk bisnis anda."
   }
 ]
 
@@ -29,9 +29,9 @@ export default function Products() {
     <section id="products" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Our Core Products</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Layanan Kami</h2>
           <p className="text-lg text-foreground/70 mb-12">
-            A comprehensive suite of cloud services designed for performance, security, and scalability.
+            Lengkapi kebutuhan bisnis dengan Teknologi Informasi tanpa harus memiliki karyawan IT.
           </p>
         </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">

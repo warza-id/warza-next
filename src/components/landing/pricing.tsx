@@ -60,16 +60,16 @@ export default function Pricing() {
     <section id="pricing" className="py-20 md:py-28 bg-muted/50">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Flexible Pricing for Every Scale</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Pricing List</h2>
           <p className="text-lg text-foreground/70 mb-12">
-            Transparent pricing with no hidden fees. Choose the plan that's right for your business.
+            Harga transparan bisa dinegosiasikan sesuai kebutuhan.
           </p>
         </div>
         
         <Tabs defaultValue="compute" className="w-full max-w-5xl mx-auto">
           <TabsList className="grid w-full grid-cols-2 mb-10 max-w-md mx-auto">
-            <TabsTrigger value="compute">Compute Engine</TabsTrigger>
-            <TabsTrigger value="storage">Object Storage</TabsTrigger>
+            <TabsTrigger value="compute">Web Development</TabsTrigger>
+            <TabsTrigger value="storage">IT Course</TabsTrigger>
           </TabsList>
           
           <TabsContent value="compute">
