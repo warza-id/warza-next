@@ -3,8 +3,8 @@ import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'ApexCloud - Enterprise Cloud Solutions',
-  description: 'Scalable cloud infrastructure for the modern enterprise.',
+  title: 'Warza - Jasa Pembuatan Software dan IT Konsultan',
+  description: 'UMKM Pembuatan Software, Website, Aplikasi, Android, Ios.',
 };
 
 export default function RootLayout({

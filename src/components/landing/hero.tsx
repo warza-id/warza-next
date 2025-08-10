@@ -18,7 +18,8 @@ export default function Hero() {
             Warza
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
-            Build, deploy, and manage your applications with unparalleled performance, security, and reliability. ApexCloud is the trusted partner for your digital transformation.
+            UMKM Jasa Pembuatan Software untuk support bisnis anda.<br/>Seperti : Aplikasi Kasir, Sistem HR, Absensi Karyawan, dan Website Perusahaan.
+            dengan harga terjangkau sesuai kebutuhan bisnis anda.
           </p>
           <div className="flex justify-center gap-4">
             <Button size="lg" asChild>

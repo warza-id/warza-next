@@ -6,6 +6,7 @@ import { Cloud, Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { useIsMobile } from '@/hooks/use-mobile';
+import Image from 'next/image';
 
 export default function Header() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -40,8 +41,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-            <Cloud className="h-8 w-8 text-primary" />
-            <span className="text-2xl font-bold font-headline">ApexCloud</span>
+            <Image src="/img/logo-warza-vertical.png" width={100} height={50} alt="Logo Warza" />
           </Link>
           
           <nav className="hidden md:flex items-center gap-6">
