@@ -13,7 +13,7 @@ export default function Hero() {
         }}
       ></div>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="max-w-4xl mx-auto text-center">
+        <div id="about" className="max-w-4xl mx-auto text-center">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6">
             Warza Teknologi Indonesia
           </h1>

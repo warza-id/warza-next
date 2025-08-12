@@ -48,22 +48,28 @@ export default function Contact() {
   })
 
   function onSubmit(values: z.infer<typeof formSchema>) {
-    startTransition(async () => {
-      const result = await submitConsultationRequest(values);
-      if (result.success) {
-        toast({
-          title: "Request Sent!",
-          description: result.message,
-        })
-        form.reset();
-      } else {
-        toast({
-          variant: "destructive",
-          title: "Submission Failed",
-          description: result.message || "Please try again.",
-        })
-      }
-    });
+    console.log(values);
+    window.open('https://api.whatsapp.com/send?phone=6285171064406&text=' + 
+      values.name + '-' +
+      values.email + '-' + 
+      values.company + '-' + 
+      values.message,'_blank');
+    // startTransition(async () => {
+    //   const result = await submitConsultationRequest(values);
+    //   if (result.success) {
+    //     toast({
+    //       title: "Request Sent!",
+    //       description: result.message,
+    //     })
+    //     form.reset();
+    //   } else {
+    //     toast({
+    //       variant: "destructive",
+    //       title: "Submission Failed",
+    //       description: result.message || "Please try again.",
+    //     })
+    //   }
+    // });
   }
 
   return (
@@ -141,7 +147,7 @@ export default function Contact() {
                       Submitting...
                     </>
                   ) : (
-                    'Request Consultation'
+                    'Chat via Whatsapp'
                   )}
                 </Button>
               </form>

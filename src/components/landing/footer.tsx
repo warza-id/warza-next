@@ -1,4 +1,4 @@
-import { Cloud, Github, Twitter, Linkedin } from "lucide-react"
+import { Cloud, Github, Twitter, Facebook, Instagram } from "lucide-react"
 import Link from "next/link"
 import { Button } from "../ui/button"
 import Image from "next/image"
@@ -6,14 +6,22 @@ import Image from "next/image"
 export default function Footer() {
   const socialLinks = [
     { name: "GitHub", icon: <Github className="h-5 w-5" />, href: "#" },
-    { name: "Twitter", icon: <Twitter className="h-5 w-5" />, href: "#" },
-    { name: "LinkedIn", icon: <Linkedin className="h-5 w-5" />, href: "#" },
+    { name: "Facebook", icon: <Facebook className="h-5 w-5" />, href: "#" },
+    { name: "Instagram", icon: <Instagram className="h-5 w-5" />, href: "https://www.instagram.com/warza.indonesia/" },
   ]
   
   const footerLinks = [
-    { title: "Products", links: [{ name: "Compute", href: "#pricing" }, { name: "Storage", href: "#pricing" }, { name: "Kubernetes", href: "#products" }, { name: "CDN", href: "#products" }] },
-    { title: "Company", links: [{ name: "About Us", href: "#" }, { name: "Careers", href: "#" }, { name: "Press", href: "#" }] },
-    { title: "Resources", links: [{ name: "Documentation", href: "#" }, { name: "Support", href: "#contact" }, { name: "Status", href: "#" }] }
+    { title: "Products", links: [
+      { name: "Beekasir", href: "#products" }, 
+      { name: "Compro", href: "#products" }, 
+      { name: "Bazet", href: "#products" }] },
+    { title: "Services", links: [
+      { name: "Web Development", href: "#pricing" }, 
+      { name: "IT Course", href: "#pricing" }] },
+    { title: "Resources", links: [
+      { name: "About", href: "#about" }, 
+      { name: "Services", href: "#services" }, 
+      { name: "Contact", href: "#contact" }] }
   ]
 
   return (
@@ -48,7 +56,7 @@ export default function Footer() {
           <div className="flex items-center gap-2">
             {socialLinks.map((link) => (
               <Button key={link.name} variant="ghost" size="icon" asChild>
-                <Link href={link.href} aria-label={link.name}>
+                <Link href={link.href} aria-label={link.name} target="blank">
                   {link.icon}
                 </Link>
               </Button>
