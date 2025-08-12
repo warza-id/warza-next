@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
           <div className="col-span-2 md:col-span-2">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <Image src="/img/logo-warza-vertical.png" width={100} height={50} alt="Logo Warza" />
+              <Image src="/img/warza-teknologi.png" width={100} height={50} alt="Logo Warza" />
             </Link>
             <p className="text-sm text-foreground/70 max-w-xs">Alamat : Perumahan Panorama Asri,<br/>Jl. Sumbawa no 27, Sukahaji, Majalengka, Jawa Barat</p>
           </div>

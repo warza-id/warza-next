@@ -1,6 +1,8 @@
 import Image from "next/image"
 import { Card, CardContent } from "@/components/ui/card"
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
+import { Button } from "../ui/button"
+import Link from "next/link"
 
 const testimonials = [
   {
@@ -31,37 +33,89 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <section id="testimonials" className="py-20 md:py-28 bg-background">
+    <section id="products" className="py-20 md:py-28 bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Trusted by Industry Leaders</h2>
+          <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Produk Kami</h2>
           <p className="text-lg text-foreground/70 mb-12">
-            Don't just take our word for it. Here's what our customers have to say.
+            Kami memiliki produk software yang bisa digunakan untuk bisnis anda.
           </p>
         </div>
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
-          {testimonials.map((testimonial) => (
-            <Card key={testimonial.name} className="flex flex-col justify-between p-6 bg-card">
-              <CardContent className="p-0 flex-1 mb-6">
-                <p className="text-lg italic text-foreground/90">"{testimonial.quote}"</p>
-              </CardContent>
-              <div className="mt-auto">
-                <div className="flex items-center gap-4 mb-4">
-                  <Avatar>
-                    <AvatarImage src={`https://placehold.co/40x40.png`} alt={testimonial.name} data-ai-hint="person face" />
-                    <AvatarFallback>{testimonial.avatar}</AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <p className="font-semibold">{testimonial.name}</p>
-                    <p className="text-sm text-foreground/70">{testimonial.title}</p>
-                  </div>
-                </div>
-                <div className="border-t pt-4">
-                  <Image src={testimonial.logoUrl} alt={`${testimonial.name}'s company logo`} width={120} height={40} className="opacity-60" data-ai-hint={testimonial.logoHint} />
+          <Card key={'beekasir-key'} className="flex flex-col justify-between p-6 bg-card">
+            <CardContent className="p-0 flex-1 mb-6">
+              <p className="text-lg italic text-foreground/90">
+                <Image src="/img/showcase-kasir.png" width={500} height={150} alt="Showcase Kasir" />
+              </p>
+            </CardContent>
+            <div className="mt-auto">
+              <div className="flex items-center gap-4 mb-4">
+                <Avatar>
+                  <Image src="/img/logo-beekasir.png" width={100} height={50} alt="Logo Beekasir" />
+                </Avatar>
+                <div>
+                  <p className="font-semibold">Beekasir</p>
+                  <p className="text-sm text-foreground/70">Aplikasi Kasir</p>
                 </div>
               </div>
-            </Card>
-          ))}
+              <div className="border-t pt-4">
+                Platform : Web, Mobile Android.<br />Fitur : Produk Stock Opname, Cashdrawer, Nota Cetak dan Digital.
+              </div>
+              <Button asChild className="w-full" variant={'outline'}>
+                <Link href="https://play.google.com/store/apps/details?id=com.beebeesoft.beekasir" target="blank">Preview</Link>
+              </Button>
+            </div>
+          </Card>
+
+          <Card key={'compro-key'} className="flex flex-col justify-between p-6 bg-card">
+            <CardContent className="p-0 flex-1 mb-6">
+              <p className="text-lg italic text-foreground/90">
+                <Image src="/img/showcase-compro.png" width={500} height={150} alt="Showcase Compro" />
+              </p>
+            </CardContent>
+            <div className="mt-auto">
+              <div className="flex items-center gap-4 mb-4">
+                <Avatar>
+                  O | O
+                </Avatar>
+                <div>
+                  <p className="font-semibold">Compro</p>
+                  <p className="text-sm text-foreground/70">Website Company Profile</p>
+                </div>
+              </div>
+              <div className="border-t pt-4">
+                Platform : Web Responsive.<br />Fitur : Landing Page, Blog, Post, Dashboard, Commentar, Galery, Oranization.
+              </div>
+              <Button asChild className="w-full" variant={'outline'}>
+                <Link href="http://perumahan.beebeesoft.com/" target="blank">Preview</Link>
+              </Button>
+            </div>
+          </Card>
+
+          <Card key={'shoping-key'} className="flex flex-col justify-between p-6 bg-card">
+            <CardContent className="p-0 flex-1 mb-6">
+              <p className="text-lg italic text-foreground/90">
+                <Image src="/img/showcase-bazet.png" width={500} height={150} alt="Showcase Kasir" />
+              </p>
+            </CardContent>
+            <div className="mt-auto">
+              <div className="flex items-center gap-4 mb-4">
+                <Avatar>
+                  <Image src="/img/bazet-icon-mini.png" width={100} height={50} alt="Logo Beekasir" />
+                </Avatar>
+                <div>
+                  <p className="font-semibold">Bazet</p>
+                  <p className="text-sm text-foreground/70">Aplikasi Catatan Keuangan</p>
+                </div>
+              </div>
+              <div className="border-t pt-4">
+                Platform : Mobile Android.<br />Fitur : Catat Pendapatan, Catat Pengeluaran, Lihat Margin Keuangan.
+              </div>
+              <Button asChild className="w-full" variant={'outline'}>
+                <Link href="https://play.google.com/store/apps/details?id=com.beebeesoft.bazet" target="blank">Preview</Link>
+              </Button>
+            </div>
+          </Card>
         </div>
       </div>
     </section>

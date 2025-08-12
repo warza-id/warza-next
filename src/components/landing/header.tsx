@@ -26,9 +26,9 @@ export default function Header() {
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   const navLinks = [
-    { name: 'Products', href: '#products' },
+    { name: 'Services', href: '#services' },
     { name: 'Pricing', href: '#pricing' },
-    { name: 'Testimonials', href: '#testimonials' },
+    { name: 'Products', href: '#products' },
   ];
 
   return (
@@ -41,7 +41,7 @@ export default function Header() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center gap-2" onClick={() => setIsMenuOpen(false)}>
-            <Image src="/img/logo-warza-vertical.png" width={100} height={50} alt="Logo Warza" />
+            <Image src="/img/warza-teknologi.png" width={100} height={50} alt="Logo Warza" />
           </Link>
           
           <nav className="hidden md:flex items-center gap-6">

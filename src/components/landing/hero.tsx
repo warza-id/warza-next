@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <h1 className="font-headline text-4xl md:text-6xl lg:text-7xl font-bold tracking-tighter mb-6">
-            Warza
+            Warza Teknologi Indonesia
           </h1>
           <p className="text-lg md:text-xl text-foreground/80 max-w-2xl mx-auto mb-8">
             UMKM Jasa Pembuatan Software untuk support bisnis anda.<br/>Seperti : Aplikasi Kasir, Sistem HR, Absensi Karyawan, dan Website Perusahaan.
