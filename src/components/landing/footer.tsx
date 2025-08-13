@@ -32,7 +32,7 @@ export default function Footer() {
             <Link href="/" className="flex items-center gap-2 mb-4">
               <Image src="/img/warza-teknologi.png" width={100} height={50} alt="Logo Warza" />
             </Link>
-            <p className="text-sm text-foreground/70 max-w-xs">Alamat : Perumahan Panorama Asri,<br/>Jl. Sumbawa no 27, Sukahaji, Majalengka, Jawa Barat</p>
+            <p className="text-sm text-foreground/70 max-w-xs">Alamat : Perumahan Panorama Asri,<br/>Jl. Sumbawa no 27, Sukahaji, Majalengka, Jawa Barat, Indonesia 45471</p>
           </div>
           
           {footerLinks.map((section) => (

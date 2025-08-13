@@ -79,10 +79,12 @@ export default function Contact() {
           <div className="max-w-md">
             <h2 className="text-3xl md:text-4xl font-bold font-headline mb-4">Anda memiliki pertanyaan ?</h2>
             <p className="text-lg text-foreground/70 mb-6">
-              Hubungi kami kapanpun melalui semua kontak yang ada disini: Whatsapp, Telphone, Email, Instagram, dan Form Kontak Kami.
+              Hubungi kami kapanpun gratis, tehubung langsung tanpa bot.
             </p>
             <p className="text-foreground/70">
-              Konsultasi gratis, dan akan terhubung langsung dengan kami tanpa melalui bot.
+              Email : help@warza.id <br/>
+              Whatsapp : 0851 7106 4406 <br/>
+              Phone : 0851 7106 4406 <br/>
             </p>
           </div>
           <div className="max-w-lg mx-auto w-full bg-card p-8 rounded-lg shadow-md">
