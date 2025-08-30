@@ -20,7 +20,7 @@ export default function Footer() {
       { name: "IT Course", href: "#pricing" }] },
     { title: "Resources", links: [
       { name: "About", href: "#about" }, 
-      { name: "Services", href: "#services" }, 
+      { name: "Privacy Policy", href: "/privacy-policy" }, 
       { name: "Contact", href: "#contact" }] }
   ]
 
