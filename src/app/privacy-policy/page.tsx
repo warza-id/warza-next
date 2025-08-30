@@ -7,14 +7,18 @@ export default function PrivacyPolicyPage() {
       <h1 className="text-4xl font-bold text-center mb-8">Kebijakan Privasi</h1>
       
       <div className="bg-white p-6 rounded-lg shadow-md">
-        <h2 className="text-2xl font-semibold mb-4">Aplikasi [Nama Aplikasi Anda]</h2>
+        <h2 className="text-2xl font-semibold mb-4">Aplikasi Warza Teknologi</h2>
+        <ul className="list-disc list-inside ml-4 mb-4">
+          <li><strong>BeeKasir</strong>: Aplikasi Kasir berbasis android dan web</li>
+          <li><strong>Antrianku</strong>: Aplikasi Antrian berbasis android dan web.</li>
+        </ul>
         <p className="mb-4">
-          Kebijakan Privasi ini menjelaskan bagaimana <strong>[Nama Aplikasi Anda]</strong> (&quot;Aplikasi&quot;, &quot;kami&quot;, &quot;milik kami&quot;) mengumpulkan, menggunakan, dan mengungkapkan informasi Anda ketika Anda menggunakan layanan kami.
+          Kebijakan Privasi ini menjelaskan bagaimana <strong>Warza Teknologi</strong> (&quot;Aplikasi&quot;, &quot;kami&quot;, &quot;milik kami&quot;) mengumpulkan, menggunakan, dan mengungkapkan informasi Anda ketika Anda menggunakan layanan kami.
         </p>
 
         <h3 className="text-xl font-semibold mt-6 mb-2">1. Informasi yang Kami Kumpulkan</h3>
         <p className="mb-4">
-          Aplikasi <strong>[Nama Aplikasi Anda]</strong> adalah aplikasi gratis dan tidak secara langsung mengumpulkan informasi identitas pribadi (seperti nama, alamat email, atau nomor telepon) dari pengguna.
+          Aplikasi <strong>Warza Teknologi</strong> adalah aplikasi gratis dan tidak secara langsung mengumpulkan informasi identitas pribadi (seperti nama, alamat email, atau nomor telepon) dari pengguna.
         </p>
 
         <p className="mb-4">
@@ -60,7 +64,7 @@ export default function PrivacyPolicyPage() {
           Jika Anda memiliki pertanyaan tentang Kebijakan Privasi ini, silakan hubungi kami melalui:
         </p>
         <ul className="list-disc list-inside ml-4 mb-4">
-          <li><strong>Email</strong>: [Alamat Email Dukungan Anda]</li>
+          <li><strong>Email</strong>: help@warza.id</li>
         </ul>
       </div>
     </div>

@@ -19,7 +19,7 @@ export default function Footer() {
       { name: "Web Development", href: "#pricing" }, 
       { name: "IT Course", href: "#pricing" }] },
     { title: "Resources", links: [
-      { name: "About", href: "#about" }, 
+      { name: "Account Deletion", href: "/account-deletion" }, 
       { name: "Privacy Policy", href: "/privacy-policy" }, 
       { name: "Contact", href: "#contact" }] }
   ]
