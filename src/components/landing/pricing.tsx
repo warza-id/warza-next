@@ -5,6 +5,39 @@ import { Check } from "lucide-react"
 import Link from "next/link"
 
 const pricingData = {
+  apps: [
+    {
+      name: "Free",
+      price: "Rp0,-",
+      period: "/ Selamanya",
+      features: [
+        "All Fitur Basic", 
+        "All App Ekosistem",
+        "Untuk UMKM yang memulai usaha"],
+      cta: "Tanya",
+    },
+    {
+      name: "Pro",
+      price: "50rb",
+      period: "/ Bulan",
+      features: [
+        "All Fitur Free", 
+        "Unlimited User", 
+        "Untuk Usaha yang memiliki karyawan"],
+      cta: "Tanya",
+      popular: true,
+    },
+    {
+      name: "Corp",
+      price: "100rb",
+      period: "/ Bulan",
+      features: [
+        "All Fitur Pro", 
+        "Unlimited Branch", 
+        "Untuk Usaha yang memiliki cabang"],
+      cta: "Tanya",
+    },
+  ],
   compute: [
     {
       name: "Flash",
@@ -93,12 +126,21 @@ export default function Pricing() {
           </p>
         </div>
         
-        <Tabs defaultValue="compute" className="w-full max-w-5xl mx-auto">
-          <TabsList className="grid w-full grid-cols-2 mb-10 max-w-md mx-auto">
+        <Tabs defaultValue="apps" className="w-full max-w-5xl mx-auto">
+          <TabsList className="grid w-full grid-cols-3 mb-10 max-w-md mx-auto">
+            <TabsTrigger value="apps">Sorware as a Service</TabsTrigger>
             <TabsTrigger value="compute">Web Development</TabsTrigger>
             <TabsTrigger value="storage">IT Course</TabsTrigger>
           </TabsList>
           
+          <TabsContent value="apps">
+            <div className="grid md:grid-cols-3 gap-8">
+              {pricingData.apps.map((plan) => (
+                <PricingCard key={plan.name} {...plan} />
+              ))}
+            </div>
+          </TabsContent>
+
           <TabsContent value="compute">
             <div className="grid md:grid-cols-3 gap-8">
               {pricingData.compute.map((plan) => (
