@@ -9,8 +9,9 @@ export default function PrivacyPolicyPage() {
       <div className="bg-white p-6 rounded-lg shadow-md">
         <h2 className="text-2xl font-semibold mb-4">Aplikasi Warza Teknologi</h2>
         <ul className="list-disc list-inside ml-4 mb-4">
-          <li><strong>BeeKasir</strong>: Aplikasi Kasir berbasis android dan web</li>
-          <li><strong>Antrianku</strong>: Aplikasi Antrian berbasis android dan web.</li>
+          <li><strong>Kasir Q</strong>: Aplikasi Kasir berbasis android dan web</li>
+          <li><strong>Antrian Q</strong>: Aplikasi Antrian berbasis android dan web.</li>
+          <li><strong>HR Q</strong>: Human Resource Information System berbasis android dan web.</li>
         </ul>
         <p className="mb-4">
           Kebijakan Privasi ini menjelaskan bagaimana <strong>Warza Teknologi</strong> (&quot;Aplikasi&quot;, &quot;kami&quot;, &quot;milik kami&quot;) mengumpulkan, menggunakan, dan mengungkapkan informasi Anda ketika Anda menggunakan layanan kami.
