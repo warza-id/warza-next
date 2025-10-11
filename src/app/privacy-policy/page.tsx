@@ -12,6 +12,7 @@ export default function PrivacyPolicyPage() {
           <li><strong>Kasir Q</strong>: Aplikasi Kasir berbasis android dan web</li>
           <li><strong>Antrian Q</strong>: Aplikasi Antrian berbasis android dan web.</li>
           <li><strong>HR Q</strong>: Human Resource Information System berbasis android dan web.</li>
+          <li><strong>Affiliate Q</strong>: Kode Referal untuk mereferensikan aplikasi warza teknologi dan dapatkan komisi.</li>
         </ul>
         <p className="mb-4">
           Kebijakan Privasi ini menjelaskan bagaimana <strong>Warza Teknologi</strong> (&quot;Aplikasi&quot;, &quot;kami&quot;, &quot;milik kami&quot;) mengumpulkan, menggunakan, dan mengungkapkan informasi Anda ketika Anda menggunakan layanan kami.
