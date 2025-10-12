@@ -152,27 +152,27 @@ export default function Testimonials() {
             </div>
           </Card>
 
-          <Card key={'compro-key'} className="flex flex-col justify-between p-6 bg-card">
+          <Card key={'antrianku-key'} className="flex flex-col justify-between p-6 bg-card">
             <CardContent className="p-0 flex-1 mb-6">
               <p className="text-lg italic text-foreground/90">
-                <Image src="/img/showcase-compro.png" width={500} height={150} alt="Showcase Compro" />
+                <Image src="/img/showcase-antrianku.png" width={500} height={150} alt="Showcase Antrianku" />
               </p>
             </CardContent>
             <div className="mt-auto">
               <div className="flex items-center gap-4 mb-4">
                 <Avatar>
-                  O | O
+                  <Image src="/img/LogoAntrianku.png" width={100} height={50} alt="Logo Antrianku" />
                 </Avatar>
                 <div>
-                  <p className="font-semibold">Compro</p>
-                  <p className="text-sm text-foreground/70">Website Company Profile</p>
+                  <p className="font-semibold">Antrian Q</p>
+                  <p className="text-sm text-foreground/70">Aplikasi Nomor Antrian</p>
                 </div>
               </div>
               <div className="border-t pt-4">
-                Platform : Web Responsive.<br />Fitur : Landing Page, Blog, Post, Dashboard, Commentar, Galery, Oranization.
+                Platform : Android dan Web Responsive.<br />Fitur : Dashboard Antrian, Cetak Nomor Antrian, Panggilan Suara.
               </div>
               <Button asChild className="w-full" variant={'outline'}>
-                <Link href="http://perumahan.beebeesoft.com/" target="blank">Preview</Link>
+                <Link href="https://antrian.warza.id/" target="blank">Preview</Link>
               </Button>
             </div>
           </Card>
