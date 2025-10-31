@@ -13,8 +13,8 @@ export async function POST(req : Request, response : Response, head : Headers) {
       const body = await req.json();
       console.log(body);
       
-      const headersList = headers();
-      console.log(headersList);
+    //   const headersList = headers();
+    //   console.log(headersList);
       
       
       // if (apiKey != 'Veritrans') {
@@ -57,7 +57,7 @@ export async function POST(req : Request, response : Response, head : Headers) {
       }
       
       console.log(body.order_id + " - " + body.transaction_status);
-      return NextResponse.json({ 'data': body, 'status': '200', 'statusDesc' : headersList});
+      return NextResponse.json({ 'data': body, 'status': '200', 'statusDesc' : 'Log PAYMENT'});
     } catch (error) {
       console.log(error);
       
