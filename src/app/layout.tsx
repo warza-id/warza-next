@@ -2,6 +2,7 @@ import type {Metadata} from 'next';
 import { Toaster } from "@/components/ui/toaster"
 import './globals.css';
 import Script from 'next/script';
+import { Analytics } from "@vercel/analytics/next";
 
 export const metadata: Metadata = {
   title: 'Warza - Jasa Pembuatan Software dan IT Konsultan',
@@ -35,6 +36,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: brevoScript }}
           strategy="lazyOnload" // Strategi pemuatan
         />
+        <Analytics />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet" />
