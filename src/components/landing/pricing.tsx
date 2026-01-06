@@ -17,22 +17,23 @@ const pricingData = {
       cta: "Tanya",
     },
     {
-      name: "Pro",
-      price: "50rb",
+      name: "Pedangang",
+      price: "30rb",
       period: "/ Bulan",
       features: [
         "All Fitur Free", 
-        "Unlimited User", 
+        "No Iklan", 
         "Untuk Usaha yang memiliki karyawan"],
       cta: "Tanya",
       popular: true,
     },
     {
-      name: "Corp",
+      name: "Pengusaha",
       price: "100rb",
       period: "/ Bulan",
       features: [
         "All Fitur Pro", 
+        "5 user Akun : Owner, Admin, Kasir, Gudang, Manager",
         "Unlimited Branch", 
         "Untuk Usaha yang memiliki cabang"],
       cta: "Tanya",
