@@ -12,6 +12,11 @@ import {
   Store
 } from 'lucide-react';
 
+export const metadata = {
+  title: 'Kasir Q - Aplikasi Kasir untuk UMKM',
+  description: 'Digitalisasi bisnis Anda dengan Kasir Q, aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Unduh sekarang di PlayStore dan nikmati kemudahan mengelola usaha Anda!',
+}
+
 export default function LandingPage() {
   // Ganti link ini dengan link asli Anda
   const LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=com.beebeesoft.beekasir"; // Link lama/baru
