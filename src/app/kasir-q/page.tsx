@@ -21,7 +21,7 @@ export default function LandingPage() {
   // Ganti link ini dengan link asli Anda
   const LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=com.beebeesoft.beekasir"; // Link lama/baru
   const LINK_WHATSAPP = "https://wa.me/6285171064406?text=Halo%20Admin%20Kasir%20Q,%20saya%20tertarik%20menggunakan%20aplikasi%20ini.";
-  const VIDEO_EMBED_URL = "https://www.youtube.com/embed/placeholder_video_id"; // Ganti ID video Youtube
+  const VIDEO_EMBED_URL = "https://youtube.com/embed/5kbo9R5OQO8?si=UlQHJwUPhNmgO-i0&modestbranding=1"; // Ganti ID video Youtube
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
@@ -328,7 +328,7 @@ export default function LandingPage() {
       </section>
 
       {/* --- SECTION: VIDEO DEMO --- */}
-      {/* <section id="video" className="py-20 bg-slate-900 text-white">
+      <section id="video" className="py-20 bg-slate-900 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Lihat Kasir Q Beraksi</h2>
           <div className="max-w-4xl mx-auto aspect-video bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-700 relative">
@@ -343,15 +343,15 @@ export default function LandingPage() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                     className="w-full h-full absolute inset-0"
                   ></iframe>
-                  <div className="absolute inset-0 bg-slate-800 flex flex-col items-center justify-center pointer-events-none">
+                  {/* <div className="absolute inset-0 bg-slate-800 flex flex-col items-center justify-center pointer-events-none">
                      <p className="text-slate-400">Video Demo Preview</p>
                      <p className="text-slate-600 text-sm mt-2">(Masukkan ID Youtube di kode)</p>
-                  </div>
+                  </div> */}
                </div>
             </div>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* --- CTA SECTION --- */}
       <section className="py-24 bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-center">
