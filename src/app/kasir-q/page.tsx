@@ -65,7 +65,7 @@ export default function LandingPage() {
                 Kelola Bisnis Jadi Lebih Mudah dengan <span className="text-blue-600">Kasir Q</span>
               </h1>
               <p className="text-lg text-slate-600 md:pr-10">
-                Aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Terhubung ke Ekosistem Warza Teknologi : Kasir Q, Antrian Q, HR Q, Affiliate Q, Finance Q(Segera Hadir).
+                Aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Terhubung ke Ekosistem Warza Teknologi : Kasir Q, Antrian Q, HR Q, Affiliate Q dan Toko Online.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
@@ -87,10 +87,10 @@ export default function LandingPage() {
               
               <div className="pt-6 flex items-center justify-center md:justify-start gap-6 text-sm text-slate-500">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Bantuan Data Entry, Setup dan Training.
+                  <CheckCircle2 size={16} className="text-blue-600" /> Aplikasi Terintegrasi Ekosistem Warza Teknologi.
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Pembayaran dalam Satu Device
+                  <CheckCircle2 size={16} className="text-blue-600" /> Multi Payment, Multi Cabang.
                 </div>
                 <div className="flex items-center gap-2">
                   <CheckCircle2 size={16} className="text-blue-600" /> Support Offline dan Online
@@ -143,9 +143,15 @@ export default function LandingPage() {
               <div className="w-14 h-14 bg-green-100 rounded-xl flex items-center justify-center text-green-600 mb-6">
                 <Zap size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Lebih Simple & Modern</h3>
+              <h3 className="text-xl font-bold mb-3">Aplikasi Terintegrasi</h3>
               <p className="text-slate-600">
-                Tidak seperti aplikasi lain yang kompleks, Kasir Q lebih simple sehingga mudah untuk digunakan, UI Modern dan Fitur mengikuti perkembangan pengguna.
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Kasir Q : Aplikasi Kasir (Point Of Sales)</li>
+                  <li>Antrian Q : Dashboard Manajemen Antrian</li>
+                  <li>Toko Online : Jangkau transaksi jarak jauh</li>
+                  <li>HR Q : Kelola Karyawan dan Absensi (segera hadir)</li>
+                  <li>Finance Q : Kelola Keuangan dan Perpajakan (Segera Hadir)</li>
+                </ul>
               </p>
             </div>
 
@@ -154,9 +160,16 @@ export default function LandingPage() {
               <div className="w-14 h-14 bg-blue-100 rounded-xl flex items-center justify-center text-blue-600 mb-6">
                 <BarChart3 size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Laporan Keuangan Detail</h3>
+              <h3 className="text-xl font-bold mb-3">Laporan Lengkap</h3>
               <p className="text-slate-600">
-                Bukan sekedar catat. Kasir Q menyajikan keuntungan, laporan stok, hingga laporan dari cabang lain.
+                Membantu dalam pengambilan keputusan bisnis dengan laporan : 
+                 <ul className="list-disc list-inside space-y-2">
+                  <li>Penjualan - Omzet, Laba, Rugi</li>
+                  <li>Pembelian - Belanja Modal dan Stok</li>
+                  <li>Produk Terlaris</li>
+                  <li>Produk Kurang Laku (segera hadir)</li>
+                  <li>Laporan Utama untuk tau anda untung atau rugi (Segera Hadir)</li>
+                </ul>
               </p>
             </div>
 
@@ -165,9 +178,14 @@ export default function LandingPage() {
               <div className="w-14 h-14 bg-orange-100 rounded-xl flex items-center justify-center text-orange-600 mb-6">
                 <Smartphone size={32} />
               </div>
-              <h3 className="text-xl font-bold mb-3">Hybrid Online & Offline</h3>
+              <h3 className="text-xl font-bold mb-3">Multiplatform</h3>
               <p className="text-slate-600">
-                Internet mati? Tidak masalah. Aplikasi tetap bisa digunakan untuk transaksi. Data akan tersinkronisasi otomatis saat online kembali.
+                Aplikasi Kasir Q dapat digunakan di berbagai perangkat :
+                <ul className="list-disc list-inside space-y-2">
+                  <li>Android</li>
+                  <li>Ios (Segera Hadir)</li>
+                  <li>Web Browser (bisa untuk semua perangkat)</li>
+                </ul>
               </p>
             </div>
           </div>
@@ -186,20 +204,16 @@ export default function LandingPage() {
                
                <div className="space-y-6">
                  <FeatureItem 
-                   title="Manajemen Stok Canggih" 
-                   desc="Atur stok barang, varian harga (grosir/ecer), dan notifikasi stok menipis."
+                   title="Pembayaran masih pake banyak EDC? atau Tunai semua? atau masih cek manual sudah masuk atau belum?" 
+                   desc="Pelanggan akan senang jika pembayaran mudah dan cepat, Kasir Q mendukung berbagai metode pembayaran : Tunai, QRIS, E-Wallet, Kartu Debit/Kredit, Transfer Bank dalam satu device tanpa input nominal dan cek manual."
                  />
                  <FeatureItem 
-                   title="Pembayaran Lengkap dalam satu device" 
-                   desc="Tidak perlu ribet dan mahal peke EDC, Cukup HP/Tab bisa terima Cash, QRIS, Gopay, Shopee Pay, VA, Kartu Debit/Kredit, Indomaret, dan banyak lagi."
+                   title="Nota/Struk masih ditulis manual? atau malah tanpa struk?" 
+                   desc="Resiko salah hitung, lama dan perlu catat dua kali bisa dihindari dengan Kasir Q Tinggal klik struk dicetak via printer thermal yang hemat tinta, bisa share eNota via WhatsApp juga lho hemat kertas!"
                  />
                  <FeatureItem 
-                   title="Berbagai Pilihan Bukti Transaksi" 
-                   desc="Berikan Pelanggan buktu transaksi dalam pilihan : Nota Cetak Thermal, Faktur PDF, e-Nota Share Link via Whatsapp/Email/dll"
-                 />
-                 <FeatureItem 
-                   title="Sitem Terintegrasi" 
-                   desc="CashDrawer, Barcode Scanner, QRCode, Whatsapp Share, Order via Web(Segera Hadir)"
+                   title="Jualan Online banyak potongannya? atau persaingan harga terlalu ketat?" 
+                   desc="Buka Toko Online Sendiri aja. Kasir Q sudah terintegrasi dengan Toko Online Sendiri, jadi pelanggan bisa pesan dari rumah tanpa potongan, bisa bayar di tempat (COD), terhubung ke whatapp, dan Pembayaran terintegrasi."
                  />
                </div>
             </div>
