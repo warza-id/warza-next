@@ -144,7 +144,7 @@ export default function LandingPage() {
                 <Zap size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Aplikasi Terintegrasi</h3>
-              <p className="text-slate-600">
+              
                 <ul className="list-disc list-inside space-y-2">
                   <li>Kasir Q : Aplikasi Kasir (Point Of Sales)</li>
                   <li>Antrian Q : Dashboard Manajemen Antrian</li>
@@ -152,7 +152,7 @@ export default function LandingPage() {
                   <li>HR Q : Kelola Karyawan dan Absensi (segera hadir)</li>
                   <li>Finance Q : Kelola Keuangan dan Perpajakan (Segera Hadir)</li>
                 </ul>
-              </p>
+              
             </div>
 
             {/* Card 2 */}
@@ -161,7 +161,7 @@ export default function LandingPage() {
                 <BarChart3 size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Laporan Lengkap</h3>
-              <p className="text-slate-600">
+              
                 Membantu dalam pengambilan keputusan bisnis dengan laporan : 
                  <ul className="list-disc list-inside space-y-2">
                   <li>Penjualan - Omzet, Laba, Rugi</li>
@@ -170,7 +170,7 @@ export default function LandingPage() {
                   <li>Produk Kurang Laku (segera hadir)</li>
                   <li>Laporan Utama untuk tau anda untung atau rugi (Segera Hadir)</li>
                 </ul>
-              </p>
+              
             </div>
 
             {/* Card 3 */}
@@ -179,14 +179,14 @@ export default function LandingPage() {
                 <Smartphone size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Multiplatform</h3>
-              <p className="text-slate-600">
+              
                 Aplikasi Kasir Q dapat digunakan di berbagai perangkat :
                 <ul className="list-disc list-inside space-y-2">
                   <li>Android</li>
                   <li>Ios (Segera Hadir)</li>
                   <li>Web Browser (bisa untuk semua perangkat)</li>
                 </ul>
-              </p>
+              
             </div>
           </div>
         </div>
@@ -204,16 +204,20 @@ export default function LandingPage() {
                
                <div className="space-y-6">
                  <FeatureItem 
+                   title="Nota/Struk masih ditulis manual? atau malah tanpa nota/struk?" 
+                   desc="Resiko salah hitung, lama dan perlu catat dua kali bisa dihindari dengan Kasir Q Tinggal klik struk dicetak via printer thermal yang hemat tinta, bisa share eNota via WhatsApp juga lho hemat kertas!"
+                 />
+                 <FeatureItem 
                    title="Pembayaran masih pake banyak EDC? atau Tunai semua? atau masih cek manual sudah masuk atau belum?" 
                    desc="Pelanggan akan senang jika pembayaran mudah dan cepat, Kasir Q mendukung berbagai metode pembayaran : Tunai, QRIS, E-Wallet, Kartu Debit/Kredit, Transfer Bank dalam satu device tanpa input nominal dan cek manual."
                  />
                  <FeatureItem 
-                   title="Nota/Struk masih ditulis manual? atau malah tanpa struk?" 
-                   desc="Resiko salah hitung, lama dan perlu catat dua kali bisa dihindari dengan Kasir Q Tinggal klik struk dicetak via printer thermal yang hemat tinta, bisa share eNota via WhatsApp juga lho hemat kertas!"
-                 />
-                 <FeatureItem 
                    title="Jualan Online banyak potongannya? atau persaingan harga terlalu ketat?" 
                    desc="Buka Toko Online Sendiri aja. Kasir Q sudah terintegrasi dengan Toko Online Sendiri, jadi pelanggan bisa pesan dari rumah tanpa potongan, bisa bayar di tempat (COD), terhubung ke whatapp, dan Pembayaran terintegrasi."
+                 />
+                 <FeatureItem 
+                   title="Saat pake aplikasi kasir tiba tiba internet mati, aplikasi jadi error atau gak bisa dipake?" 
+                   desc="Tenang, Kasir Q bisa tetap dipakai walaupun internet mati, data akan tersinkronisasi otomatis saat koneksi kembali. Jadi transaksi tetap lancar tanpa hambatan."
                  />
                </div>
             </div>
@@ -372,7 +376,8 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <h2 className="text-3xl md:text-5xl font-bold mb-6">Siap Mengembangkan Usaha Anda?</h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Bergabunglah dengan ribuan UMKM lain yang sudah beralih ke digital. Download Kasir Q sekarang, Gratis!
+            Bergabunglah dengan ribuan UMKM lain yang sudah beralih ke digital. Download Kasir Q sekarang, Gratis!<br />
+            Butuh bantuan? Tim kami siap membantu Anda mulai dari cara penggunaan aplikasi, input data, sampai bisa jualan.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <Link 
