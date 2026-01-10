@@ -81,6 +81,11 @@ const HARDWARE_LIST = [
   },
 ];
 
+export const metadata = {
+  title: 'Shop - Perlengkapan Usaha',
+  description: 'Belanja Perlengkapan Usaha seperti : Printer Kasir, Laci Uang (Cashdrawer), Scanner, dll.',
+}
+
 export default function HardwareShopPage() {
   return (
     <div className="min-h-screen bg-gray-50 pb-20">
