@@ -66,7 +66,7 @@ export default function LandingPage() {
                 Kelola Bisnis Jadi Lebih Mudah dengan <span className="text-blue-600">Kasir Q</span>
               </h1>
               <p className="text-lg text-slate-600 md:pr-10">
-                Aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Terhubung ke Ekosistem Warza Teknologi : Kasir Q, Antrian Q, HR Q, Affiliate Q dan Toko Online.
+                Aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Cukup pake Smartphone Android sendiri sudah bisa jadi Mesin Kasir Professional.
               </p>
               
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
@@ -82,19 +82,19 @@ export default function LandingPage() {
                   className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-xl font-bold text-lg transition flex items-center justify-center gap-2"
                 >
                   <MessageCircle className="text-green-500" />
-                  Hubungi Sales
+                  Hubungi Sales di WhatsApp
                 </Link>
               </div>
               
               <div className="pt-6 flex items-center justify-center md:justify-start gap-6 text-sm text-slate-500">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Aplikasi Terintegrasi Ekosistem Warza Teknologi.
+                  <CheckCircle2 size={16} className="text-blue-600" /> Pelanggan bisa order via Online pesanan langsung masuk ke aplikasi kasir Q.
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Multi Payment, Multi Cabang.
+                  <CheckCircle2 size={16} className="text-blue-600" /> Pembayaran Tanpa EDC, cukup dari HP Terima Semua Pembayaran.
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Support Offline dan Online
+                  <CheckCircle2 size={16} className="text-blue-600" /> Aplikasi kasir tetep bisa di pake dalam mode tanpa internet.
                 </div>
               </div>
             </div>
@@ -265,11 +265,12 @@ export default function LandingPage() {
             <PricingCard 
               name="Gratis"
               price="Rp 0"
-              desc="Cocok untuk coba-coba"
+              desc="Bisa untuk coba-coba"
               features={[
-                "Iklan Aktif",
-                "Fitur Dasar Kasir",
-                "Laporan Sederhana",
+                "Ada iklan nya",
+                "Fitur Belanja Bahan Baku",
+                "Fitur Transaksi Penjualan",
+                "Laporan Penjualan",
                 "1 Akun Device",
               ]}
               buttonText="Download Sekarang"
@@ -283,10 +284,10 @@ export default function LandingPage() {
               period="/bulan"
               desc="Untuk usaha mikro"
               features={[
-                "Bebas Iklan (No Ads)",
+                "Bebas Iklan",
                 "1 Akun Kasir",
-                "Upload Gambar Produk",
-                "Support Standar",
+                "Ada Foto Produk nya",
+                "Fitur Pembayaran QRIS, e-Wallet, Kartu",
               ]}
               buttonText="Pilih Paket"
               highlight
@@ -299,11 +300,10 @@ export default function LandingPage() {
               period="/bulan"
               desc="Untuk usaha berkembang"
               features={[
-                "Bebas Iklan",
-                "3 Akun Kasir",
+                "Bisa untuk Owner, Kasir dan Pelayan",
                 "1 Cabang Toko",
-                "Upload Gambar Produk",
-                "Laporan Lengkap",
+                "Order via Toko Online",
+                "Semua Fitur Pedagang",
               ]}
               buttonText="Pilih Paket"
               isPopular
@@ -316,11 +316,10 @@ export default function LandingPage() {
               period="/bulan"
               desc="Untuk ekspansi bisnis"
               features={[
-                "Bebas Iklan",
-                "5 Akun Kasir",
-                "Unlimited Cabang",
-                "Prioritas Support",
-                "Fitur Premium Lengkap",
+                "Bisa Buat Owner, Kasir, Waiter, Gudang, Dapur.",
+                "Bisa Buka Cabang",
+                "Gratis Stand Kasir",
+                "Gratis 1 Bulan",
               ]}
               buttonText="Pilih Paket"
               highlight
