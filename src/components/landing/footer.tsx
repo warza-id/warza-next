@@ -12,7 +12,7 @@ export default function Footer() {
   
   const footerLinks = [
     { title: "Products", links: [
-      { name: "Beekasir", href: "#products" }, 
+      { name: "Kasir Q", href: "/kasir-q" }, 
       { name: "Compro", href: "#products" }, 
       { name: "Bazet", href: "#products" }] },
     { title: "Services", links: [

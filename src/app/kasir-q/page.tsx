@@ -11,6 +11,7 @@ import {
   ShieldCheck,
   Store
 } from 'lucide-react';
+import Footer from '@/components/landing/footer';
 
 export const metadata = {
   title: 'Kasir Q - Aplikasi Kasir untuk UMKM',
@@ -399,19 +400,7 @@ export default function LandingPage() {
       </section>
 
       {/* --- FOOTER --- */}
-      <footer className="bg-white pt-16 pb-8 border-t border-slate-100">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center gap-6 mb-8">
-            <div className="flex items-center gap-2">
-              <Image src="/img/Kasir-Q.png" width={25} height={25} alt="Logo Kasir Q" />
-              <span className="text-xl font-bold text-slate-900">Kasir Q</span>
-            </div>
-            <p className="text-slate-500 text-sm">
-              © {new Date().getFullYear()} Warza Teknologi Indonesia. All rights reserved.
-            </p>
-          </div>
-        </div>
-      </footer>
+      <Footer />
 
     </div>
   );
