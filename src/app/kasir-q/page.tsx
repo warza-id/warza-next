@@ -1,49 +1,66 @@
-import React from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
-import { 
-  Download, 
-  MessageCircle, 
-  CheckCircle2, 
-  BarChart3, 
-  Zap, 
-  Smartphone, 
+import React from "react";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Download,
+  MessageCircle,
+  CheckCircle2,
+  BarChart3,
+  Zap,
+  Smartphone,
   ShieldCheck,
-  Store
-} from 'lucide-react';
-import Footer from '@/components/landing/footer';
+  Store,
+} from "lucide-react";
+import Footer from "@/components/landing/footer";
 
 export const metadata = {
-  title: 'Kasir Q - Aplikasi Kasir untuk UMKM',
-  description: 'Digitalisasi bisnis Anda dengan Kasir Q, aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Unduh sekarang di PlayStore dan nikmati kemudahan mengelola usaha Anda!',
-}
+  title: "Kasir Q - Aplikasi Kasir untuk UMKM",
+  description:
+    "Digitalisasi bisnis Anda dengan Kasir Q, aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Unduh sekarang di PlayStore dan nikmati kemudahan mengelola usaha Anda!",
+};
 
 export default function LandingPage() {
   // Ganti link ini dengan link asli Anda
-  const LINK_PLAYSTORE = "https://play.google.com/store/apps/details?id=com.beebeesoft.beekasir"; // Link lama/baru
-  const LINK_WHATSAPP = "https://wa.me/6285171064406?text=Halo%20Admin%20Kasir%20Q,%20saya%20tertarik%20menggunakan%20aplikasi%20ini.";
-  const VIDEO_EMBED_URL = "https://youtube.com/embed/5kbo9R5OQO8?si=UlQHJwUPhNmgO-i0&modestbranding=1"; // Ganti ID video Youtube
+  const LINK_PLAYSTORE =
+    "https://play.google.com/store/apps/details?id=com.beebeesoft.beekasir"; // Link lama/baru
+  const LINK_WHATSAPP =
+    "https://wa.me/6285171064406?text=Halo%20Admin%20Kasir%20Q,%20saya%20tertarik%20menggunakan%20aplikasi%20ini.";
+  const VIDEO_EMBED_URL =
+    "https://youtube.com/embed/5kbo9R5OQO8?si=UlQHJwUPhNmgO-i0&modestbranding=1"; // Ganti ID video Youtube
 
   return (
     <div className="min-h-screen bg-white font-sans text-slate-900">
-      
       {/* --- NAVBAR --- */}
       <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             {/* Logo Placeholder */}
-            <Image src="/img/Kasir-Q.png" width={25} height={25} alt="Logo Kasir Q" />
+            <Image
+              src="/img/Kasir-Q.png"
+              width={25}
+              height={25}
+              alt="Logo Kasir Q"
+            />
             <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-indigo-600">
               Kasir Q
             </span>
           </div>
           <div className="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600">
-        <Link href="#kelebihan" className="hover:text-blue-600 transition">Kelebihan</Link>
-        <Link href="#fitur" className="hover:text-blue-600 transition">Fitur</Link>
-        <Link href="#harga" className="hover:text-blue-600 transition">Harga</Link> {/* Tambahkan ini */}
-        <Link href="#video" className="hover:text-blue-600 transition">Video</Link>
-        </div>
-          <Link 
+            <Link href="#kelebihan" className="hover:text-blue-600 transition">
+              Kelebihan
+            </Link>
+            <Link href="#fitur" className="hover:text-blue-600 transition">
+              Fitur
+            </Link>
+            <Link href="#harga" className="hover:text-blue-600 transition">
+              Harga
+            </Link>{" "}
+            {/* Tambahkan ini */}
+            <Link href="#video" className="hover:text-blue-600 transition">
+              Video
+            </Link>
+          </div>
+          <Link
             href={LINK_PLAYSTORE}
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full text-sm font-semibold transition flex items-center gap-2"
           >
@@ -63,21 +80,24 @@ export default function LandingPage() {
                 🚀 Solusi UMKM Indonesia #GoDigital
               </div>
               <h1 className="text-4xl md:text-6xl font-extrabold leading-tight tracking-tight text-slate-900">
-                Kelola Bisnis Jadi Lebih Mudah dengan <span className="text-blue-600">Kasir Q</span>
+                Kelola Bisnis Jadi Lebih Mudah dengan{" "}
+                <span className="text-blue-600">Kasir Q</span>
               </h1>
               <p className="text-lg text-slate-600 md:pr-10">
-                Aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Cukup pake Smartphone Android sendiri sudah bisa jadi Mesin Kasir Professional.
+                Aplikasi kasir (Point Of Sales) serba bisa untuk UMKM. Cukup
+                pake Smartphone Android sendiri sudah bisa jadi Mesin Kasir
+                Professional.
               </p>
-              
+
               <div className="flex flex-col sm:flex-row items-center gap-4 justify-center md:justify-start pt-4">
-                <Link 
+                <Link
                   href={LINK_PLAYSTORE}
                   className="w-full sm:w-auto px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white rounded-xl font-bold text-lg transition shadow-lg shadow-blue-600/20 flex items-center justify-center gap-2"
                 >
                   <Download />
                   Download di PlayStore
                 </Link>
-                <Link 
+                <Link
                   href={LINK_WHATSAPP}
                   className="w-full sm:w-auto px-8 py-4 bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 rounded-xl font-bold text-lg transition flex items-center justify-center gap-2"
                 >
@@ -85,16 +105,20 @@ export default function LandingPage() {
                   Hubungi Sales di WhatsApp
                 </Link>
               </div>
-              
+
               <div className="pt-6 flex items-center justify-center md:justify-start gap-6 text-sm text-slate-500">
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Pelanggan bisa order via Online pesanan langsung masuk ke aplikasi kasir Q.
+                  <CheckCircle2 size={16} className="text-blue-600" /> Pelanggan
+                  bisa order via Online pesanan langsung masuk ke aplikasi kasir
+                  Q.
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Pembayaran Tanpa EDC, cukup dari HP Terima Semua Pembayaran.
+                  <CheckCircle2 size={16} className="text-blue-600" />{" "}
+                  Pembayaran Tanpa EDC, cukup dari HP Terima Semua Pembayaran.
                 </div>
                 <div className="flex items-center gap-2">
-                  <CheckCircle2 size={16} className="text-blue-600" /> Aplikasi kasir tetep bisa di pake dalam mode tanpa internet.
+                  <CheckCircle2 size={16} className="text-blue-600" /> Aplikasi
+                  kasir tetep bisa di pake dalam mode tanpa internet.
                 </div>
               </div>
             </div>
@@ -104,23 +128,21 @@ export default function LandingPage() {
               <div className="relative z-10 mx-auto w-72 h-[580px] bg-slate-900 rounded-[3rem] border-8 border-slate-900 shadow-2xl">
                 {/* Screen Content Placeholder */}
                 <div className="w-full h-full bg-white rounded-[2.5rem] overflow-hidden relative">
-                   {/* Ganti src dengan screenshot aplikasi asli Anda */}
-                   <div className="absolute inset-0 bg-slate-100 flex flex-col items-center justify-center text-slate-400 space-y-2">
-                    
-                      <Image 
-                        src="/img/SC-KASIR-Q-MENU.jpeg" 
-                        alt="Aplikasi Kasir Q" 
-                        fill 
-                        className="object-cover"
-                      /> 
-                     
-                   </div>
-                   {/* Mockup UI Elements */}
-                   <div className="absolute bottom-20 left-4 right-4 h-32 bg-slate-100 rounded-xl"></div>
-                   <div className="absolute bottom-4 left-4 right-4 h-12 bg-blue-600 rounded-lg"></div>
+                  {/* Ganti src dengan screenshot aplikasi asli Anda */}
+                  <div className="absolute inset-0 bg-slate-100 flex flex-col items-center justify-center text-slate-400 space-y-2">
+                    <Image
+                      src="/img/SC-KASIR-Q-MENU.jpeg"
+                      alt="Aplikasi Kasir Q"
+                      fill
+                      className="object-cover"
+                    />
+                  </div>
+                  {/* Mockup UI Elements */}
+                  <div className="absolute bottom-20 left-4 right-4 h-32 bg-slate-100 rounded-xl"></div>
+                  <div className="absolute bottom-4 left-4 right-4 h-12 bg-blue-600 rounded-lg"></div>
                 </div>
               </div>
-              
+
               {/* Decorative Elements */}
               <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-blue-400/20 rounded-full blur-3xl -z-10"></div>
             </div>
@@ -132,9 +154,12 @@ export default function LandingPage() {
       <section id="kelebihan" className="py-20 bg-slate-50">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-3xl mx-auto mb-16">
-            <h2 className="text-3xl font-bold text-slate-900 mb-4">Mengapa Harus <span className="text-blue-600">Kasir Q</span>?</h2>
+            <h2 className="text-3xl font-bold text-slate-900 mb-4">
+              Mengapa Harus <span className="text-blue-600">Kasir Q</span>?
+            </h2>
             <p className="text-slate-600 text-lg">
-              Kami merancang Kasir Q untuk menutupi kekurangan aplikasi kasir lain. Lebih hemat, dari UMKM untuk UMKM.
+              Kami merancang Kasir Q untuk menutupi kekurangan aplikasi kasir
+              lain. Lebih hemat, dari UMKM untuk UMKM.
             </p>
           </div>
 
@@ -145,15 +170,16 @@ export default function LandingPage() {
                 <Zap size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Aplikasi Terintegrasi</h3>
-              
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Kasir Q : Aplikasi Kasir (Point Of Sales)</li>
-                  <li>Antrian Q : Dashboard Manajemen Antrian</li>
-                  <li>Toko Online : Jangkau transaksi jarak jauh</li>
-                  <li>HR Q : Kelola Karyawan dan Absensi (segera hadir)</li>
-                  <li>Finance Q : Kelola Keuangan dan Perpajakan (Segera Hadir)</li>
-                </ul>
-              
+
+              <ul className="list-disc list-inside space-y-2">
+                <li>Kasir Q : Aplikasi Kasir (Point Of Sales)</li>
+                <li>Antrian Q : Dashboard Manajemen Antrian</li>
+                <li>Toko Online : Jangkau transaksi jarak jauh</li>
+                <li>HR Q : Kelola Karyawan dan Absensi (segera hadir)</li>
+                <li>
+                  Finance Q : Kelola Keuangan dan Perpajakan (Segera Hadir)
+                </li>
+              </ul>
             </div>
 
             {/* Card 2 */}
@@ -162,16 +188,16 @@ export default function LandingPage() {
                 <BarChart3 size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Laporan Lengkap</h3>
-              
-                Membantu dalam pengambilan keputusan bisnis dengan laporan : 
-                 <ul className="list-disc list-inside space-y-2">
-                  <li>Penjualan - Omzet, Laba, Rugi</li>
-                  <li>Pembelian - Belanja Modal dan Stok</li>
-                  <li>Produk Terlaris</li>
-                  <li>Produk Kurang Laku (segera hadir)</li>
-                  <li>Laporan Utama untuk tau anda untung atau rugi (Segera Hadir)</li>
-                </ul>
-              
+              Membantu dalam pengambilan keputusan bisnis dengan laporan :
+              <ul className="list-disc list-inside space-y-2">
+                <li>Penjualan - Omzet, Laba, Rugi</li>
+                <li>Pembelian - Belanja Modal dan Stok</li>
+                <li>Produk Terlaris</li>
+                <li>Produk Kurang Laku (segera hadir)</li>
+                <li>
+                  Laporan Utama untuk tau anda untung atau rugi (Segera Hadir)
+                </li>
+              </ul>
             </div>
 
             {/* Card 3 */}
@@ -180,14 +206,12 @@ export default function LandingPage() {
                 <Smartphone size={32} />
               </div>
               <h3 className="text-xl font-bold mb-3">Multiplatform</h3>
-              
-                Aplikasi Kasir Q dapat digunakan di berbagai perangkat :
-                <ul className="list-disc list-inside space-y-2">
-                  <li>Android</li>
-                  <li>Ios (Segera Hadir)</li>
-                  <li>Web Browser (bisa untuk semua perangkat)</li>
-                </ul>
-              
+              Aplikasi Kasir Q dapat digunakan di berbagai perangkat :
+              <ul className="list-disc list-inside space-y-2">
+                <li>Android</li>
+                <li>Ios (Segera Hadir)</li>
+                <li>Web Browser (bisa untuk semua perangkat)</li>
+              </ul>
             </div>
           </div>
         </div>
@@ -198,49 +222,108 @@ export default function LandingPage() {
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center gap-16">
             <div className="flex-1 space-y-8">
-               <h2 className="text-3xl font-bold text-slate-900">
-                 Fitur Lengkap untuk <br />
-                 Mendukung Bisnis Anda
-               </h2>
-               
-               <div className="space-y-6">
-                 <FeatureItem 
-                   title="Nota/Struk masih ditulis manual? atau malah tanpa nota/struk?" 
-                   desc="Resiko salah hitung, lama dan perlu catat dua kali bisa dihindari dengan Kasir Q Tinggal klik struk dicetak via printer thermal yang hemat tinta, bisa share eNota via WhatsApp juga lho hemat kertas!"
-                 />
-                 <FeatureItem 
-                   title="Pembayaran masih pake banyak EDC? atau Tunai semua? atau masih cek manual sudah masuk atau belum?" 
-                   desc="Pelanggan akan senang jika pembayaran mudah dan cepat, Kasir Q mendukung berbagai metode pembayaran : Tunai, QRIS, E-Wallet, Kartu Debit/Kredit, Transfer Bank dalam satu device tanpa input nominal dan cek manual."
-                 />
-                 <FeatureItem 
-                   title="Jualan Online banyak potongannya? atau persaingan harga terlalu ketat?" 
-                   desc="Buka Toko Online Sendiri aja. Kasir Q sudah terintegrasi dengan Toko Online Sendiri, jadi pelanggan bisa pesan dari rumah tanpa potongan, bisa bayar di tempat (COD), terhubung ke whatapp, dan Pembayaran terintegrasi."
-                 />
-                 <FeatureItem 
-                   title="Saat pake aplikasi kasir tiba tiba internet mati, aplikasi jadi error atau gak bisa dipake?" 
-                   desc="Tenang, Kasir Q bisa tetap dipakai walaupun internet mati, data akan tersinkronisasi otomatis saat koneksi kembali. Jadi transaksi tetap lancar tanpa hambatan."
-                 />
-               </div>
+              <h2 className="text-3xl font-bold text-slate-900">
+                Fitur Lengkap untuk <br />
+                Mendukung Bisnis Anda
+              </h2>
+
+              <div className="space-y-6">
+                <FeatureItem
+                  title="Nota/Struk masih ditulis manual? atau malah tanpa nota/struk?"
+                  desc="Resiko salah hitung, lama dan perlu catat dua kali bisa dihindari dengan Kasir Q Tinggal klik struk dicetak via printer thermal yang hemat tinta, bisa share eNota via WhatsApp juga lho hemat kertas!"
+                />
+                <FeatureItem
+                  title="Pembayaran masih pake banyak EDC? atau Tunai semua? atau masih cek manual sudah masuk atau belum?"
+                  desc="Pelanggan akan senang jika pembayaran mudah dan cepat, Kasir Q mendukung berbagai metode pembayaran : Tunai, QRIS, E-Wallet, Kartu Debit/Kredit, Transfer Bank dalam satu device tanpa input nominal dan cek manual."
+                />
+                <FeatureItem
+                  title="Jualan Online banyak potongannya? atau persaingan harga terlalu ketat?"
+                  desc="Buka Toko Online Sendiri aja. Kasir Q sudah terintegrasi dengan Toko Online Sendiri, jadi pelanggan bisa pesan dari rumah tanpa potongan, bisa bayar di tempat (COD), terhubung ke whatapp, dan Pembayaran terintegrasi."
+                />
+                <FeatureItem
+                  title="Saat pake aplikasi kasir tiba tiba internet mati, aplikasi jadi error atau gak bisa dipake?"
+                  desc="Tenang, Kasir Q bisa tetap dipakai walaupun internet mati, data akan tersinkronisasi otomatis saat koneksi kembali. Jadi transaksi tetap lancar tanpa hambatan."
+                />
+              </div>
             </div>
-            
-            <div className="flex-1 grid grid-cols-2 gap-4">
-               {/* Grid of Images / Screenshots */}
-               <div className="space-y-4 mt-8">
-                 <div className="h-64 bg-slate-100 rounded-2xl border border-slate-200 flex items-center justify-center">
-                    <span className="text-slate-400 text-sm">Dashboard UI</span>
-                 </div>
-                 <div className="h-40 bg-blue-50 rounded-2xl border border-blue-100 flex items-center justify-center">
-                    <span className="text-blue-400 text-sm">Struk Digital</span>
-                 </div>
-               </div>
-               <div className="space-y-4">
-                 <div className="h-40 bg-orange-50 rounded-2xl border border-orange-100 flex items-center justify-center">
-                    <span className="text-orange-400 text-sm">Laporan</span>
-                 </div>
-                 <div className="h-64 bg-slate-100 rounded-2xl border border-slate-200 flex items-center justify-center">
-                    <span className="text-slate-400 text-sm">Scan QRIS</span>
-                 </div>
-               </div>
+
+            <div className="flex-1 grid grid-cols-2 gap-4 p-2">
+              {/* K OLOM KIRI (Tinggi - Pendek) */}
+              <div className="space-y-4">
+                {/* 1. Display Kasir Full (Tinggi) */}
+                {/* PENTING: Tambahkan 'relative group overflow-hidden' di parent container */}
+                <div className="relative h-64 rounded-2xl border border-slate-200/60 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-slate-50">
+                  <Image
+                    src="/show/toko-online.jpeg" // Pastikan gambar ini ada
+                    alt="Toko Online - Scan for Order"
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw" // Optimasi loading gambar
+                    className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  />
+                  {/* Opsional: Overlay teks halus di pojok */}
+                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg shadow-sm z-10">
+                    <span className="text-slate-700 text-xs font-medium">
+                      Toko Online - Scan for Order
+                    </span>
+                  </div>
+                </div>
+
+                {/* 2. Struk Digital (Pendek) */}
+                <div className="relative h-40 rounded-2xl border border-blue-100 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-blue-50/30">
+                  {/* Ganti placeholder dengan gambar struk di HP */}
+                  <Image
+                    src="/show/display-kasir-full.png"  // Ganti dengan gambar mockup HP menampilkan struk
+                    alt="Perangkat Kasir Lengkap"
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    // Menggunakan object-contain atau cover tergantung jenis gambarnya
+                    className="object-cover group-hover:scale-105 transition-transform duration-500 group-hover:opacity-100"
+                  />
+                  {/* Fallback jika belum ada gambar, teks tetap terbaca */}
+                  <div className="absolute inset-0 flex items-end justify-start p-3 from-blue-50/80 to-transparent pointer-events-none">
+                    <span className="text-blue-600 font-medium text-sm bg-white/80 px-2 py-1 rounded-md">
+                      Perangkat Kasir Lengkap
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              {/* KOLOM KANAN (Pendek - Tinggi) */}
+              <div className="space-y-4 mt-8 lg:mt-12">
+                {" "}
+                {/* Memberi sedikit offset agar tidak terlalu kotak */}
+                {/* 3. Laporan (Pendek) */}
+                <div className="relative h-40 rounded-2xl border border-orange-100 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-orange-50/30">
+                  <Image
+                    src="/show/qr-payment.jpeg" // Ganti dengan gambar grafik/chart
+                    alt="Terima Pembayaran QRIS"
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-500 group-hover:opacity-100"
+                  />
+                  <div className="absolute inset-0 flex items-end justify-start p-3 bg-gradient-to-t from-orange-50/80 to-transparent pointer-events-none">
+                    <span className="text-orange-600 font-medium text-sm bg-white/80 px-2 py-1 rounded-md">
+                      Terima Pembayaran QRIS
+                    </span>
+                  </div>
+                </div>
+                {/* 4. Scan QRIS (Tinggi) */}
+                <div className="relative h-64 rounded-2xl border border-slate-200/60 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-slate-50">
+                  <Image
+                    src="/show/struk-digital.jpeg" // Ganti dengan gambar orang scan QRIS
+                    alt="Struk Digital"
+                    fill
+                    sizes="(max-width: 768px) 50vw, 33vw"
+                    // object-center atau object-top tergantung fokus fotonya
+                    className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
+                  />
+                  <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg shadow-sm z-10">
+                    <span className="text-slate-700 text-xs font-medium">
+                      Struk Digital
+                    </span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -254,15 +337,15 @@ export default function LandingPage() {
               Pilih Paket Sesuai Kebutuhan
             </h2>
             <p className="text-slate-600 text-lg">
-              Mulai dari gratis selamanya hingga paket lengkap untuk ekspansi bisnis Anda.
+              Mulai dari gratis selamanya hingga paket lengkap untuk ekspansi
+              bisnis Anda.
             </p>
           </div>
 
           {/* Grid Layout untuk 5 Card */}
           <div className="flex flex-wrap justify-center gap-6">
-            
             {/* 1. PAKET GRATIS */}
-            <PricingCard 
+            <PricingCard
               name="Gratis"
               price="Rp 0"
               desc="Bisa untuk coba-coba"
@@ -278,7 +361,7 @@ export default function LandingPage() {
             />
 
             {/* 2. PAKET PEDAGANG */}
-            <PricingCard 
+            <PricingCard
               name="Pedagang"
               price="Rp 30.000"
               period="/bulan"
@@ -294,7 +377,7 @@ export default function LandingPage() {
             />
 
             {/* 3. PAKET PERINTIS */}
-            <PricingCard 
+            <PricingCard
               name="Perintis"
               price="Rp 50.000"
               period="/bulan"
@@ -310,7 +393,7 @@ export default function LandingPage() {
             />
 
             {/* 4. PAKET PENGUSAHA */}
-            <PricingCard 
+            <PricingCard
               name="Pengusaha"
               price="Rp 100.000"
               period="/bulan"
@@ -326,7 +409,7 @@ export default function LandingPage() {
             />
 
             {/* 5. PAKET ENTERPRISE */}
-            <PricingCard 
+            <PricingCard
               name="Enterprise"
               price="Hubungi Kami"
               desc="Solusi kustom bisnis besar"
@@ -340,7 +423,6 @@ export default function LandingPage() {
               buttonText="Kontak Sales"
               isDark
             />
-
           </div>
         </div>
       </section>
@@ -350,22 +432,21 @@ export default function LandingPage() {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-8">Lihat Kasir Q Beraksi</h2>
           <div className="max-w-4xl mx-auto aspect-video bg-slate-800 rounded-2xl overflow-hidden shadow-2xl border border-slate-700 relative">
-            
             <div className="absolute inset-0 flex items-center justify-center">
-               <div className="text-center">
-                  <iframe 
-                    width="100%" 
-                    height="100%" 
-                    src={VIDEO_EMBED_URL} 
-                    title="Video Demo Kasir Q" 
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                    className="w-full h-full absolute inset-0"
-                  ></iframe>
-                  {/* <div className="absolute inset-0 bg-slate-800 flex flex-col items-center justify-center pointer-events-none">
+              <div className="text-center">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src={VIDEO_EMBED_URL}
+                  title="Video Demo Kasir Q"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  className="w-full h-full absolute inset-0"
+                ></iframe>
+                {/* <div className="absolute inset-0 bg-slate-800 flex flex-col items-center justify-center pointer-events-none">
                      <p className="text-slate-400">Video Demo Preview</p>
                      <p className="text-slate-600 text-sm mt-2">(Masukkan ID Youtube di kode)</p>
                   </div> */}
-               </div>
+              </div>
             </div>
           </div>
         </div>
@@ -374,20 +455,25 @@ export default function LandingPage() {
       {/* --- CTA SECTION --- */}
       <section className="py-24 bg-gradient-to-br from-blue-600 to-indigo-700 text-white text-center">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">Siap Mengembangkan Usaha Anda?</h2>
+          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+            Siap Mengembangkan Usaha Anda?
+          </h2>
           <p className="text-xl text-blue-100 mb-10 max-w-2xl mx-auto">
-            Bergabunglah dengan ribuan UMKM lain yang sudah beralih ke digital. Download Kasir Q sekarang, Gratis!<br />
-            Butuh bantuan? Tim kami siap membantu Anda mulai dari cara penggunaan aplikasi, input data, sampai bisa jualan.
+            Bergabunglah dengan ribuan UMKM lain yang sudah beralih ke digital.
+            Download Kasir Q sekarang, Gratis!
+            <br />
+            Butuh bantuan? Tim kami siap membantu Anda mulai dari cara
+            penggunaan aplikasi, input data, sampai bisa jualan.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <Link 
+            <Link
               href={LINK_PLAYSTORE}
               className="px-8 py-4 bg-white text-blue-600 hover:bg-blue-50 rounded-xl font-bold text-lg transition flex items-center justify-center gap-3"
             >
               <Download />
               Download Aplikasi
             </Link>
-            <Link 
+            <Link
               href={LINK_WHATSAPP}
               className="px-8 py-4 bg-transparent border-2 border-white hover:bg-white/10 rounded-xl font-bold text-lg transition flex items-center justify-center gap-3"
             >
@@ -400,13 +486,12 @@ export default function LandingPage() {
 
       {/* --- FOOTER --- */}
       <Footer />
-
     </div>
   );
 }
 
 // Component Helper untuk List Fitur
-function FeatureItem({ title, desc }: { title: string, desc: string }) {
+function FeatureItem({ title, desc }: { title: string; desc: string }) {
   return (
     <div className="flex gap-4">
       <div className="mt-1">
@@ -416,45 +501,53 @@ function FeatureItem({ title, desc }: { title: string, desc: string }) {
       </div>
       <div>
         <h3 className="font-bold text-slate-900 text-lg">{title}</h3>
-        <p className="text-slate-600 mt-1 leading-relaxed">
-          {desc}
-        </p>
+        <p className="text-slate-600 mt-1 leading-relaxed">{desc}</p>
       </div>
     </div>
-  )
+  );
 }
 
 // Component Helper untuk Kartu Harga
-function PricingCard({ 
-  name, 
-  price, 
-  period = "", 
-  desc, 
-  features, 
-  buttonText, 
+function PricingCard({
+  name,
+  price,
+  period = "",
+  desc,
+  features,
+  buttonText,
   isPopular = false,
   isDark = false,
   isOutline = false,
-  highlight = false
-}: { 
-  name: string, 
-  price: string, 
-  period?: string, 
-  desc: string, 
-  features: string[], 
-  buttonText: string,
-  isPopular?: boolean,
-  isDark?: boolean,
-  isOutline?: boolean,
-  highlight?: boolean
+  highlight = false,
+}: {
+  name: string;
+  price: string;
+  period?: string;
+  desc: string;
+  features: string[];
+  buttonText: string;
+  isPopular?: boolean;
+  isDark?: boolean;
+  isOutline?: boolean;
+  highlight?: boolean;
 }) {
   return (
-    <div className={`
+    <div
+      className={`
       relative w-full md:w-[280px] p-8 rounded-3xl flex flex-col transition-all duration-300
-      ${isPopular ? 'bg-white border-2 border-blue-600 shadow-xl scale-105 z-10' : ''}
-      ${isDark ? 'bg-slate-900 text-white shadow-lg' : 'bg-white'}
-      ${!isPopular && !isDark ? 'border border-slate-100 shadow-sm hover:shadow-md' : ''}
-    `}>
+      ${
+        isPopular
+          ? "bg-white border-2 border-blue-600 shadow-xl scale-105 z-10"
+          : ""
+      }
+      ${isDark ? "bg-slate-900 text-white shadow-lg" : "bg-white"}
+      ${
+        !isPopular && !isDark
+          ? "border border-slate-100 shadow-sm hover:shadow-md"
+          : ""
+      }
+    `}
+    >
       {isPopular && (
         <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
           Paling Laris
@@ -462,36 +555,66 @@ function PricingCard({
       )}
 
       <div className="mb-6">
-        <h3 className={`text-lg font-bold mb-2 ${isDark ? 'text-white' : 'text-slate-900'}`}>{name}</h3>
-        <p className={`text-sm ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>{desc}</p>
+        <h3
+          className={`text-lg font-bold mb-2 ${
+            isDark ? "text-white" : "text-slate-900"
+          }`}
+        >
+          {name}
+        </h3>
+        <p
+          className={`text-sm ${isDark ? "text-slate-400" : "text-slate-500"}`}
+        >
+          {desc}
+        </p>
       </div>
 
       <div className="mb-6">
-        <span className={`text-3xl font-bold ${isDark ? 'text-white' : 'text-slate-900'}`}>{price}</span>
-        <span className={`text-sm ${isDark ? 'text-slate-400' : 'text-slate-500'}`}>{period}</span>
+        <span
+          className={`text-3xl font-bold ${
+            isDark ? "text-white" : "text-slate-900"
+          }`}
+        >
+          {price}
+        </span>
+        <span
+          className={`text-sm ${isDark ? "text-slate-400" : "text-slate-500"}`}
+        >
+          {period}
+        </span>
       </div>
 
       <ul className="space-y-4 mb-8 flex-1">
         {features.map((feat, i) => (
           <li key={i} className="flex items-start gap-3 text-sm">
-            <CheckCircle2 size={18} className={`${isDark || isPopular || highlight ? 'text-blue-500' : 'text-slate-400'} shrink-0`} />
-            <span className={isDark ? 'text-slate-300' : 'text-slate-600'}>{feat}</span>
+            <CheckCircle2
+              size={18}
+              className={`${
+                isDark || isPopular || highlight
+                  ? "text-blue-500"
+                  : "text-slate-400"
+              } shrink-0`}
+            />
+            <span className={isDark ? "text-slate-300" : "text-slate-600"}>
+              {feat}
+            </span>
           </li>
         ))}
       </ul>
 
-      <Link 
-        href="https://wa.me/6285171064406?text=Halo%20Admin%20Kasir%20Q,%20saya%20tertarik%20menggunakan%20aplikasi%20ini." 
+      <Link
+        href="https://wa.me/6285171064406?text=Halo%20Admin%20Kasir%20Q,%20saya%20tertarik%20menggunakan%20aplikasi%20ini."
         className={`
           w-full py-3 rounded-xl font-bold text-sm transition text-center
-          ${isPopular || isDark || highlight
-            ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/20' 
-            : 'bg-slate-100 hover:bg-slate-200 text-slate-900'
+          ${
+            isPopular || isDark || highlight
+              ? "bg-blue-600 hover:bg-blue-700 text-white shadow-lg shadow-blue-600/20"
+              : "bg-slate-100 hover:bg-slate-200 text-slate-900"
           }
         `}
       >
         {buttonText}
       </Link>
     </div>
-  )
+  );
 }
