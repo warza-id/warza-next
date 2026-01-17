@@ -247,20 +247,19 @@ export default function LandingPage() {
               </div>
             </div>
 
-            <div className="flex-1 grid grid-cols-2 gap-4 p-2">
-              {/* K OLOM KIRI (Tinggi - Pendek) */}
+            <div className="flex-1 w-full grid grid-cols-1 md:grid-cols-2 gap-4 p-2">
+              {/* KOLOM KIRI (Akan muncul paling atas di HP) */}
               <div className="space-y-4">
-                {/* 1. Display Kasir Full (Tinggi) */}
-                {/* PENTING: Tambahkan 'relative group overflow-hidden' di parent container */}
-                <div className="relative h-64 rounded-2xl border border-slate-200/60 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-slate-50">
+                {/* 1. Display Kasir Full */}
+                <div className="relative h-64 w-full rounded-2xl border border-slate-200/60 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-slate-50">
                   <Image
-                    src="/show/toko-online.jpeg" // Pastikan gambar ini ada
+                    src="/show/toko-online.jpeg"
                     alt="Toko Online - Scan for Order"
                     fill
-                    sizes="(max-width: 768px) 50vw, 33vw" // Optimasi loading gambar
+                    // UBAH SIZES: 100vw di HP, 50vw di tablet ke atas
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500"
                   />
-                  {/* Opsional: Overlay teks halus di pojok */}
                   <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg shadow-sm z-10">
                     <span className="text-slate-700 text-xs font-medium">
                       Toko Online - Scan for Order
@@ -268,18 +267,15 @@ export default function LandingPage() {
                   </div>
                 </div>
 
-                {/* 2. Struk Digital (Pendek) */}
-                <div className="relative h-40 rounded-2xl border border-blue-100 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-blue-50/30">
-                  {/* Ganti placeholder dengan gambar struk di HP */}
+                {/* 2. Struk Digital */}
+                <div className="relative h-60 w-full rounded-2xl border border-blue-100 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-blue-50/30">
                   <Image
-                    src="/show/display-kasir-full.png"  // Ganti dengan gambar mockup HP menampilkan struk
+                    src="/show/display-kasir-full.png"
                     alt="Perangkat Kasir Lengkap"
                     fill
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                    // Menggunakan object-contain atau cover tergantung jenis gambarnya
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover group-hover:scale-105 transition-transform duration-500 group-hover:opacity-100"
                   />
-                  {/* Fallback jika belum ada gambar, teks tetap terbaca */}
                   <div className="absolute inset-0 flex items-end justify-start p-3 from-blue-50/80 to-transparent pointer-events-none">
                     <span className="text-blue-600 font-medium text-sm bg-white/80 px-2 py-1 rounded-md">
                       Perangkat Kasir Lengkap
@@ -288,17 +284,16 @@ export default function LandingPage() {
                 </div>
               </div>
 
-              {/* KOLOM KANAN (Pendek - Tinggi) */}
-              <div className="space-y-4 mt-8 lg:mt-12">
-                {" "}
-                {/* Memberi sedikit offset agar tidak terlalu kotak */}
-                {/* 3. Laporan (Pendek) */}
-                <div className="relative h-40 rounded-2xl border border-orange-100 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-orange-50/30">
+              {/* KOLOM KANAN (Akan muncul di bawah kolom kiri saat di HP) */}
+              {/* mt-0 di HP agar tidak terlalu jauh jaraknya, mt-8/12 hanya di layar besar */}
+              <div className="space-y-4 mt-0 md:mt-8 lg:mt-12">
+                {/* 3. Laporan */}
+                <div className="relative h-40 w-full rounded-2xl border border-orange-100 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-orange-50/30">
                   <Image
-                    src="/show/qr-payment.jpeg" // Ganti dengan gambar grafik/chart
+                    src="/show/qr-payment.jpeg"
                     alt="Terima Pembayaran QRIS"
                     fill
-                    sizes="(max-width: 768px) 50vw, 33vw"
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover opacity-90 group-hover:scale-105 transition-transform duration-500 group-hover:opacity-100"
                   />
                   <div className="absolute inset-0 flex items-end justify-start p-3 bg-gradient-to-t from-orange-50/80 to-transparent pointer-events-none">
@@ -307,14 +302,14 @@ export default function LandingPage() {
                     </span>
                   </div>
                 </div>
-                {/* 4. Scan QRIS (Tinggi) */}
-                <div className="relative h-64 rounded-2xl border border-slate-200/60 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-slate-50">
+
+                {/* 4. Scan QRIS */}
+                <div className="relative h-64 w-full rounded-2xl border border-slate-200/60 overflow-hidden group shadow-sm hover:shadow-lg transition-all duration-300 bg-slate-50">
                   <Image
-                    src="/show/struk-digital.jpeg" // Ganti dengan gambar orang scan QRIS
+                    src="/show/struk-digital.jpeg"
                     alt="Struk Digital"
                     fill
-                    sizes="(max-width: 768px) 50vw, 33vw"
-                    // object-center atau object-top tergantung fokus fotonya
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     className="object-cover object-center group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute bottom-3 left-3 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-lg shadow-sm z-10">
